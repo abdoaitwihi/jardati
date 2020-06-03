@@ -1,0 +1,371 @@
+@font-face {
+    font-family: 'caviar dreams';
+    src: url('fonts/CaviarDreams.ttf');
+}
+@font-face {
+    font-family: 'chopin script';
+    src: url('fonts/ChopinScript.otf');
+}
+@import url(http://allfont.net/allfont.css?fonts=balloon-extra-bold-bt);
+
+
+
+/*general styling*/
+body, div , section {
+    padding: 0 !important;
+    margin: 0 !important;
+    font-family: "caviar dreams", Arial;
+}
+.pointer:hover {
+    cursor: pointer;
+    color: rgb(99, 45, 45) !important;
+}
+/*end of general styling*/
+/*header styling*/
+.menu {
+    min-height: 77px;
+    max-width: 980px;
+    box-shadow: 8px white;
+
+}
+.navigation {
+    display: flex;
+    font-size: 14pt;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+/*end of header styling*/
+/*slide styling*/
+.slide {
+    height: 564px;
+    width: 100%;
+    background-image: url(assets/19.png);
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+    box-shadow: inset 0px -8px 0px rgba(255, 255, 255, 0.4),
+    inset 0px 8px 0px rgba(255, 255, 255, 0.4);
+
+}
+.slide-text{
+    position: absolute;
+    bottom: 55px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: "chopin script", Arial;
+    font-size: 40pt;
+}
+
+/*end of slide styling*/
+/*recherche stylilng */
+.recherche {
+    height: 57px;
+    background-color: white;
+    
+}
+.recherche img {
+    padding: 0;
+}
+.recherche-box {
+    margin-top: -30px !important;
+    z-index: 2 !important;
+    background-color: white;
+    border-radius: 6px 6px 0 0;
+    display: flex;
+    flex-wrap: nowrap;
+
+    
+}
+.recherche-box > div {
+    border: #d2d2d2 solid 1px;
+    width: 980px;
+    color: #6a6969;
+    height:  40% ;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
+
+}
+.recherche-button{
+    background-image: linear-gradient(#027b91 ,#32a7b6);
+    color: white !important;
+
+}
+/*end of recherche stylilng */
+/*body styling*/
+/*jardin styling*/
+.jardin {
+    min-height: 321px;
+    width: 100%;
+}
+.jardin>div > h1 {
+    font-weight: bold;
+    color: #00b8de;
+    font-size: 25pt;
+}
+.jardin>div > p {
+    color: #393939;
+    font-size: 12pt;
+}
+.special {
+    min-height: 178px ;
+    display: flex;
+
+}
+.special> span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.city-image {
+   
+
+    border-radius: 6px ;
+    height: 178px;
+    width: 86%;
+    position: relative;
+    
+}
+.city-name {
+
+    position: absolute;
+    background-color: white;
+    bottom: 5px;
+    height: 25px;
+    width: 302px;
+    border-radius: 0 0 6px 6px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+.city-name-city {
+    font-family: 'Balloon Extra Bold BT', arial;
+
+    font-weight: bold;
+    font-size: 12pt;
+    color: #20739a;
+}
+.nbr-jardin {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+    color: #20739a;
+}
+/*end of jardin styling*/
+
+/*meilleues offres styling*/
+.maillers-offres {
+    background-color: #f2f1ec;
+    box-shadow: inset 0px -8px 0px rgba(255, 255, 255, 0.4),inset 0px 8px 0px rgba(255, 255, 255, 0.4);
+}
+.maillers-offres>div > h1 {
+    font-weight: bold;
+    color: #00b8de;
+    font-size: 25pt;
+}
+.maillers-offres>div > p {
+    color: #393939;
+    font-size: 12pt;
+}
+.maillers-offres > .rooms {
+    width: 80%;
+}
+.room-image {
+    position: relative;
+    height: 181px;
+    width: 100%;
+    border-radius: 6px;
+    border: 3px white solid;
+}
+.title-zone {
+    left: 21px;
+    position: absolute;
+    top: 60px;
+    text-align: left;
+
+
+}
+.title-zone>div {
+    box-shadow:  5px 0px 0px rgba(255, 255, 255, 0.4), -10px 0px 0px rgb(255, 255, 255);
+
+    padding:  4px !important;
+
+    height: 19pt;
+    background-color: #02a2c3;
+    font-size: 12pt;
+    color: white;
+    font-weight: bold;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+}
+.title-zone .middle {
+    background-color: #20739a;
+}
+
+/*end of meilleues offres styling*/
+/*about us styling*/
+.about-us {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.about-us h2 {
+    font-weight: bold;
+    font-size: 25pt;
+    color:#00b8de ;
+}
+.about-us .first {
+    font-size: 22pt;
+    color:#393939 ;
+    font-family: "chopin script", Arial;
+
+    
+}
+/*end of about us styling*/
+/*annonce styling*/
+.annonce {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(assets/27.png);
+    background-size: cover;
+    box-shadow: inset 0px -8px 0px rgba(255, 255, 255, 0.4),
+    inset 0px 8px 0px rgba(255, 255, 255, 0.4);
+
+
+}
+.annonce h2 {
+    font-weight: bold;
+    font-size: 20pt;
+    color: white;
+}
+.annonce p {
+    font-size: 12pt;
+    color: white;
+}
+.annonce button {
+    height: 28px;
+    width: 350px;
+    color:#02a8c9 ;
+    background-image: linear-gradient(#ffffff , #e1f5f9);
+    border-radius: 6px ;
+    border: none;
+    font-weight: bold;
+}
+/*end of annonce styling*/
+/*end of body styling*/
+/*footer styling*/
+footer {
+    padding: 0 !important;
+}
+footer > .row {
+    height: 106pt;
+    font-size: 12pt;
+}
+
+footer >.row > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer p {
+    margin-bottom: 0;
+}
+.under-logo {
+    margin-top: -12px !important;
+    margin-left: 27px !important;
+    font-size: 8pt;
+}
+.under-logo-text {
+    font-size: 8pt;
+    margin-top: 0 !important;
+}
+.copy-rights {
+    background-color: #02a8c9;
+    font-size: 12pt;
+    color: white;
+    min-height: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*end of footer styling*/
+
+
+
+
+
+
+
+
+/*mobile styling*/
+
+
+@media (max-width:576px){
+    .recherche > img {
+        display: none;
+    }
+    header  {
+        text-align: center;
+    }
+    .navigation {
+        margin-top: 20px !important;
+        margin-bottom: 20px !important;
+    }
+    .slide h1 {
+        width: 100%;
+        text-align: center;
+    }
+    .recherche {
+        height: 240px;
+    }
+    .recherche-box div {
+        margin-top: 10px !important;
+        width: 80%;
+        height: 15%;
+    }
+    footer {
+        text-align: center;
+    }
+    footer > .row {
+        height: unset;
+    }    
+    .city-name {
+        width: 84%;
+    }
+    .special > span {
+        display: none;
+    }
+     .dots {
+        display: none;
+    }
+    .special > div > div {
+        margin-bottom: 10px !important;
+    }
+    .annonce button {
+        width: 80%;
+    }
+    .annonce p {
+        padding: 5px;
+        text-align: center;
+    }
+    .rooms > .row > div {
+        margin-bottom: 10px !important;
+    }
+    .about-us h2 , .about-us p {
+        text-align: center;
+        
+    }
+    footer div {
+        margin-top: 20px !important;
+    }
+
+}
